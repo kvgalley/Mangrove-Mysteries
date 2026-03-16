@@ -119,6 +119,63 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &9040842
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5050354527162583680, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_Name
+      value: RedMangrove_Tree (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 22.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 11.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.701926
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.701926
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.085439645
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.085439645
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 13.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,13 +262,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: -0, y: -0.9958072, z: -0, w: 0.09147762}
+  m_LocalPosition: {x: 4.9, y: 6.8, z: 14.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -169.503, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,6 +313,63 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!1001 &385470819
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5050354527162583680, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_Name
+      value: RedMangrove_Tree (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 25.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5129171
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5129171
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.4867402
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.4867402
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 87
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,7 +398,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 12
   m_Type: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.9961804, b: 0.9213836, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -328,7 +442,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 5000
+  m_ColorTemperature: 5273
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -348,7 +462,7 @@ Transform:
   m_GameObject: {fileID: 410087039}
   serializedVersion: 2
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 20.9, y: 3, z: 12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -383,6 +497,120 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!1001 &517460497
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5050354527162583680, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_Name
+      value: RedMangrove_Tree (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -32.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5129171
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5129171
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.4867402
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.4867402
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 87
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+--- !u!1001 &682204992
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5050354527162583680, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_Name
+      value: RedMangrove_Tree (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -22.719997
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.7599983
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -540,7 +768,7 @@ Transform:
   m_GameObject: {fileID: 1253795664}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 64.50559, y: 1.002, z: 64.80699}
+  m_LocalPosition: {x: 0, y: 5.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -633,12 +861,525 @@ Transform:
   m_GameObject: {fileID: 1262335040}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -50, y: 0, z: -50}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1456998197
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5050354527162583680, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_Name
+      value: RedMangrove_Tree (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -34.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 14.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+--- !u!1001 &1643508330
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5050354527162583680, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_Name
+      value: RedMangrove_Tree (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -24.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+--- !u!1001 &1719754397
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5050354527162583680, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_Name
+      value: RedMangrove_Tree (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -28.949997
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.330002
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5129171
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5129171
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.4867402
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.4867402
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 87
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+--- !u!1001 &1735473095
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5050354527162583680, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_Name
+      value: RedMangrove_Tree (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -25.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+--- !u!1001 &1886788823
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5050354527162583680, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_Name
+      value: RedMangrove_Tree (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -33.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+--- !u!1001 &2061507860
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5050354527162583680, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_Name
+      value: RedMangrove_Tree (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -25.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+--- !u!1 &2139212203
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2139212207}
+  - component: {fileID: 2139212206}
+  - component: {fileID: 2139212205}
+  - component: {fileID: 2139212204}
+  m_Layer: 0
+  m_Name: Plane
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!64 &2139212204
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139212203}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &2139212205
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139212203}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 008541be8ad8b3f42a5318e1c4a73d1c, type: 2}
+  - {fileID: 2100000, guid: fb659c98d6ac4db41b88596ff2c4e2e1, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &2139212206
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139212203}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &2139212207
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139212203}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 3.4, z: 0}
+  m_LocalScale: {x: 9.13, y: 9.13, z: 9.13}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &350675173795946760
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5050354527162583680, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_Name
+      value: RedMangrove_Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 30.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574794448388198458, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6645000a607c59a469ec0ed08cb65e8a, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -648,3 +1389,15 @@ SceneRoots:
   - {fileID: 832575519}
   - {fileID: 1262335043}
   - {fileID: 1253795668}
+  - {fileID: 2139212207}
+  - {fileID: 350675173795946760}
+  - {fileID: 385470819}
+  - {fileID: 2061507860}
+  - {fileID: 517460497}
+  - {fileID: 1886788823}
+  - {fileID: 1719754397}
+  - {fileID: 682204992}
+  - {fileID: 1735473095}
+  - {fileID: 1456998197}
+  - {fileID: 1643508330}
+  - {fileID: 9040842}
