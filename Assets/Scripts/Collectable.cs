@@ -1,31 +1,36 @@
+using System.Collections;
 using UnityEngine;
 
-/// <summary>
-/// Attach this script to any GameObject you want to be collectable.
-/// The object needs a Collider (set to Trigger) to be detected by the player.
-/// </summary>
+// Attach to any trash object with a Collider. Ensure isTrigger is set to True on BoxCollider
+// PlayerGrabber detects this via OverlapSphere and calls OnCollected() on trigger press.
 public class Collectable : MonoBehaviour
 {
-    [Header("Collectable Settings")]
-    public string collectableName = "Item";       // Name shown in UI or log
-    public int pointValue = 10;                   // Score/points awarded on collect
-    public bool destroyOnCollect = true;          // Remove object after collection
+    [Header("Settings")]
+    public string collectableName = "Trash";
+    public int pointValue = 10;
+
+    [Header("Idle Animation")]
+    public float bobSpeed = 1.5f;
+    public float bobHeight = 0.2f;
+    public float rotateSpeed = 90f;
+
+    [Header("Collection")]
+    [Tooltip("Seconds to shrink from full size to zero before destroying.")]
+    public float collectDuration = 0.5f;
 
     [Header("Feedback")]
-    public AudioClip collectSound;               // Optional sound effect on collect
-    public GameObject collectEffect;            // Optional particle effect on collect
-    public float bobSpeed = 1.5f;               // Speed of up/down bob animation
-    public float bobHeight = 0.2f;              // Height of bob in world units
-    public float rotateSpeed = 90f;             // Degrees per second rotation
+    public AudioClip collectSound;
 
     private Vector3 _startPos;
+    private Vector3 _originalScale;
     private AudioSource _audioSource;
+    private bool _collected = false;
 
     void Start()
     {
         _startPos = transform.position;
+        _originalScale = transform.localScale;
 
-        // Add AudioSource if a sound clip is assigned
         if (collectSound != null)
         {
             _audioSource = gameObject.AddComponent<AudioSource>();
@@ -36,26 +41,25 @@ public class Collectable : MonoBehaviour
 
     void Update()
     {
-        // Bob up and down
+        if (_collected) return;
+
+        // No Rigidbody on this object, so direct transform writes are safe
         float newY = _startPos.y + Mathf.Sin(Time.time * bobSpeed) * bobHeight;
         transform.position = new Vector3(transform.position.x, newY, transform.position.z);
-
-        // Slowly rotate
         transform.Rotate(Vector3.up, rotateSpeed * Time.deltaTime);
     }
 
-    /// <summary>
-    /// Called by the PlayerGrabber when this item is collected.
-    /// </summary>
+    // Called by PlayerGrabber — not wired via inspector
     public void OnCollected(PlayerGrabber collector)
     {
-        Debug.Log($"[Collectable] '{collectableName}' collected by {collector.gameObject.name}. +{pointValue} pts");
+        if (_collected) return;
+        _collected = true;
+        StartCoroutine(CollectRoutine());
+    }
 
-        // Spawn visual effect
-        if (collectEffect != null)
-            Instantiate(collectEffect, transform.position, Quaternion.identity);
-
-        // Play sound (detach so it survives object destruction)
+    private IEnumerator CollectRoutine()
+    {
+        // Play immediately so sound overlaps with shrink animation
         if (_audioSource != null && collectSound != null)
         {
             _audioSource.transform.SetParent(null);
@@ -63,9 +67,15 @@ public class Collectable : MonoBehaviour
             Destroy(_audioSource.gameObject, collectSound.length);
         }
 
-        if (destroyOnCollect)
-            Destroy(gameObject);
-        else
-            gameObject.SetActive(false);
+        // Shrink to zero, then destroy
+        float elapsed = 0f;
+        while (elapsed < collectDuration)
+        {
+            elapsed += Time.deltaTime;
+            transform.localScale = Vector3.Lerp(_originalScale, Vector3.zero, Mathf.Clamp01(elapsed / collectDuration));
+            yield return null;
+        }
+
+        Destroy(gameObject);
     }
 }
