@@ -20,7 +20,6 @@ public class Collectable : MonoBehaviour
 
     [Header("Feedback")]
     public AudioClip collectSound;
-    public GameObject collectEffect;
 
     private Vector3 _startPos;
     private Vector3 _originalScale;
@@ -60,8 +59,13 @@ public class Collectable : MonoBehaviour
 
     private IEnumerator CollectRoutine()
     {
-        if (collectEffect != null)
-            Instantiate(collectEffect, transform.position, Quaternion.identity);
+        // Play immediately so sound overlaps with shrink animation
+        if (_audioSource != null && collectSound != null)
+        {
+            _audioSource.transform.SetParent(null);
+            _audioSource.Play();
+            Destroy(_audioSource.gameObject, collectSound.length);
+        }
 
         // Shrink to zero, then destroy
         float elapsed = 0f;
@@ -70,14 +74,6 @@ public class Collectable : MonoBehaviour
             elapsed += Time.deltaTime;
             transform.localScale = Vector3.Lerp(_originalScale, Vector3.zero, Mathf.Clamp01(elapsed / collectDuration));
             yield return null;
-        }
-
-        // Detach audio before destroy so the clip finishes playing
-        if (_audioSource != null && collectSound != null)
-        {
-            _audioSource.transform.SetParent(null);
-            _audioSource.Play();
-            Destroy(_audioSource.gameObject, collectSound.length);
         }
 
         Destroy(gameObject);
