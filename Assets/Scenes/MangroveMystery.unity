@@ -514,7 +514,7 @@ MonoBehaviour:
   bobHeight: 0.2
   rotateSpeed: 90
   collectDuration: 0.5
-  collectSound: {fileID: 0}
+  collectSound: {fileID: 8300000, guid: c10e37d58a2233c47a1408b0044ac99e, type: 3}
 --- !u!1001 &113930145
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1484,7 +1484,7 @@ MonoBehaviour:
   bobHeight: 0.2
   rotateSpeed: 90
   collectDuration: 0.5
-  collectSound: {fileID: 0}
+  collectSound: {fileID: 8300000, guid: 17de5edfcc0b5c2449ca1738ba58bbeb, type: 3}
 --- !u!23 &288946996
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1841,7 +1841,7 @@ MonoBehaviour:
   bobHeight: 0.2
   rotateSpeed: 90
   collectDuration: 0.5
-  collectSound: {fileID: 0}
+  collectSound: {fileID: 8300000, guid: c10e37d58a2233c47a1408b0044ac99e, type: 3}
 --- !u!1001 &362334803
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2084,7 +2084,7 @@ Transform:
   m_GameObject: {fileID: 381320774}
   serializedVersion: 2
   m_LocalRotation: {x: -0.56, y: 0.4317408, z: 0.43174082, w: 0.5599999}
-  m_LocalPosition: {x: 41.05, y: 0.14, z: 22.79}
+  m_LocalPosition: {x: 41.05, y: 0.066, z: 22.79}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2129,7 +2129,7 @@ MonoBehaviour:
   bobHeight: 0.2
   rotateSpeed: 90
   collectDuration: 0.5
-  collectSound: {fileID: 0}
+  collectSound: {fileID: 8300000, guid: 17de5edfcc0b5c2449ca1738ba58bbeb, type: 3}
 --- !u!23 &381320778
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2458,7 +2458,7 @@ MonoBehaviour:
   bobHeight: 0.2
   rotateSpeed: 90
   collectDuration: 0.5
-  collectSound: {fileID: 0}
+  collectSound: {fileID: 8300000, guid: e84af3a415bb1f24ab777fb153839d04, type: 3}
 --- !u!23 &431374996
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3076,7 +3076,7 @@ MonoBehaviour:
   bobHeight: 0.2
   rotateSpeed: 90
   collectDuration: 0.5
-  collectSound: {fileID: 0}
+  collectSound: {fileID: 8300000, guid: 17de5edfcc0b5c2449ca1738ba58bbeb, type: 3}
 --- !u!23 &656549837
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3415,13 +3415,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 733511290}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 2.27, y: 0.15, z: -27.19}
+  m_LocalRotation: {x: -0.115761675, y: 0.6715244, z: 0.72396445, w: 0.10737651}
+  m_LocalPosition: {x: 2.507, y: 0.099, z: -26.948}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1929597058}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -85.696, y: -18.169, z: 180}
 --- !u!65 &733511292
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3461,7 +3461,7 @@ MonoBehaviour:
   bobHeight: 0.2
   rotateSpeed: 90
   collectDuration: 0.5
-  collectSound: {fileID: 0}
+  collectSound: {fileID: 8300000, guid: 17de5edfcc0b5c2449ca1738ba58bbeb, type: 3}
 --- !u!23 &733511294
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4627,7 +4627,7 @@ MonoBehaviour:
   bobHeight: 0.2
   rotateSpeed: 90
   collectDuration: 0.5
-  collectSound: {fileID: 0}
+  collectSound: {fileID: 8300000, guid: 17de5edfcc0b5c2449ca1738ba58bbeb, type: 3}
 --- !u!1001 &1014265445
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6214,7 +6214,7 @@ MonoBehaviour:
   bobHeight: 0.2
   rotateSpeed: 90
   collectDuration: 0.5
-  collectSound: {fileID: 0}
+  collectSound: {fileID: 8300000, guid: c10e37d58a2233c47a1408b0044ac99e, type: 3}
 --- !u!1 &1394577034 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8128668236925612103, guid: 69b01b07aba0c334ebd33e07372dc839, type: 3}
@@ -6269,7 +6269,7 @@ MonoBehaviour:
   bobHeight: 0.2
   rotateSpeed: 90
   collectDuration: 0.5
-  collectSound: {fileID: 0}
+  collectSound: {fileID: 8300000, guid: c10e37d58a2233c47a1408b0044ac99e, type: 3}
 --- !u!1 &1410784472 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8128668236925612103, guid: 69b01b07aba0c334ebd33e07372dc839, type: 3}
@@ -7182,7 +7182,7 @@ MonoBehaviour:
   bobHeight: 0.2
   rotateSpeed: 90
   collectDuration: 0.5
-  collectSound: {fileID: 0}
+  collectSound: {fileID: 8300000, guid: e84af3a415bb1f24ab777fb153839d04, type: 3}
 --- !u!1001 &1651405348
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7438,7 +7438,7 @@ MonoBehaviour:
   bobHeight: 0.2
   rotateSpeed: 90
   collectDuration: 0.5
-  collectSound: {fileID: 0}
+  collectSound: {fileID: 8300000, guid: 17de5edfcc0b5c2449ca1738ba58bbeb, type: 3}
 --- !u!23 &1655647640
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8208,7 +8208,7 @@ MonoBehaviour:
   bobHeight: 0.2
   rotateSpeed: 90
   collectDuration: 0.5
-  collectSound: {fileID: 0}
+  collectSound: {fileID: 8300000, guid: 17de5edfcc0b5c2449ca1738ba58bbeb, type: 3}
 --- !u!1001 &1791447318
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8546,7 +8546,7 @@ MonoBehaviour:
   bobHeight: 0.2
   rotateSpeed: 90
   collectDuration: 0.5
-  collectSound: {fileID: 0}
+  collectSound: {fileID: 8300000, guid: 17de5edfcc0b5c2449ca1738ba58bbeb, type: 3}
 --- !u!1001 &1850594551
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8697,7 +8697,7 @@ MonoBehaviour:
   bobHeight: 0.2
   rotateSpeed: 90
   collectDuration: 0.5
-  collectSound: {fileID: 0}
+  collectSound: {fileID: 8300000, guid: 17de5edfcc0b5c2449ca1738ba58bbeb, type: 3}
 --- !u!1001 &1895886331
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8846,7 +8846,7 @@ MonoBehaviour:
   bobHeight: 0.2
   rotateSpeed: 90
   collectDuration: 0.5
-  collectSound: {fileID: 0}
+  collectSound: {fileID: 8300000, guid: e84af3a415bb1f24ab777fb153839d04, type: 3}
 --- !u!23 &1897245034
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9010,6 +9010,10 @@ PrefabInstance:
       value: 9.41
       objectReference: {fileID: 0}
     - target: {fileID: -9146441899388365568, guid: 55fa742720a084d4b888c1a46b3e0574, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.468
+      objectReference: {fileID: 0}
+    - target: {fileID: -9146441899388365568, guid: 55fa742720a084d4b888c1a46b3e0574, type: 3}
       propertyPath: m_LocalPosition.z
       value: 10.99
       objectReference: {fileID: 0}
@@ -9078,6 +9082,10 @@ PrefabInstance:
       value: -3.26
       objectReference: {fileID: 0}
     - target: {fileID: -4972292192199634453, guid: 55fa742720a084d4b888c1a46b3e0574, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.049
+      objectReference: {fileID: 0}
+    - target: {fileID: -4972292192199634453, guid: 55fa742720a084d4b888c1a46b3e0574, type: 3}
       propertyPath: m_LocalPosition.z
       value: 9.24
       objectReference: {fileID: 0}
@@ -9100,6 +9108,10 @@ PrefabInstance:
     - target: {fileID: 1844749546196114996, guid: 55fa742720a084d4b888c1a46b3e0574, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844749546196114996, guid: 55fa742720a084d4b888c1a46b3e0574, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.026
       objectReference: {fileID: 0}
     - target: {fileID: 1844749546196114996, guid: 55fa742720a084d4b888c1a46b3e0574, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9130,8 +9142,16 @@ PrefabInstance:
       value: 24.54
       objectReference: {fileID: 0}
     - target: {fileID: 2949185749141503107, guid: 55fa742720a084d4b888c1a46b3e0574, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.047
+      objectReference: {fileID: 0}
+    - target: {fileID: 2949185749141503107, guid: 55fa742720a084d4b888c1a46b3e0574, type: 3}
       propertyPath: m_LocalPosition.z
       value: 15.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 3235940635085524099, guid: 55fa742720a084d4b888c1a46b3e0574, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.028
       objectReference: {fileID: 0}
     - target: {fileID: 3318607115937269179, guid: 55fa742720a084d4b888c1a46b3e0574, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9152,6 +9172,10 @@ PrefabInstance:
     - target: {fileID: 5504049775077448071, guid: 55fa742720a084d4b888c1a46b3e0574, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 5504049775077448071, guid: 55fa742720a084d4b888c1a46b3e0574, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.067
       objectReference: {fileID: 0}
     - target: {fileID: 5504049775077448071, guid: 55fa742720a084d4b888c1a46b3e0574, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9368,7 +9392,7 @@ MonoBehaviour:
   bobHeight: 0.2
   rotateSpeed: 90
   collectDuration: 0.5
-  collectSound: {fileID: 0}
+  collectSound: {fileID: 8300000, guid: c10e37d58a2233c47a1408b0044ac99e, type: 3}
 --- !u!114 &1929597074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9387,7 +9411,7 @@ MonoBehaviour:
   bobHeight: 0.2
   rotateSpeed: 90
   collectDuration: 0.5
-  collectSound: {fileID: 0}
+  collectSound: {fileID: 8300000, guid: c10e37d58a2233c47a1408b0044ac99e, type: 3}
 --- !u!114 &1929597075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9406,7 +9430,7 @@ MonoBehaviour:
   bobHeight: 0.2
   rotateSpeed: 90
   collectDuration: 0.5
-  collectSound: {fileID: 0}
+  collectSound: {fileID: 8300000, guid: e84af3a415bb1f24ab777fb153839d04, type: 3}
 --- !u!114 &1929597076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9425,7 +9449,7 @@ MonoBehaviour:
   bobHeight: 0.2
   rotateSpeed: 90
   collectDuration: 0.5
-  collectSound: {fileID: 0}
+  collectSound: {fileID: 8300000, guid: c10e37d58a2233c47a1408b0044ac99e, type: 3}
 --- !u!114 &1929597077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9444,7 +9468,7 @@ MonoBehaviour:
   bobHeight: 0.2
   rotateSpeed: 90
   collectDuration: 0.5
-  collectSound: {fileID: 0}
+  collectSound: {fileID: 8300000, guid: e84af3a415bb1f24ab777fb153839d04, type: 3}
 --- !u!65 &1929597078
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10297,7 +10321,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &2139212205
 MeshRenderer:
   m_ObjectHideFlags: 0
