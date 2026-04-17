@@ -1,81 +1,79 @@
-using System.Collections;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
-// Attach to any trash object with a Collider. Ensure isTrigger is set to True on BoxCollider
-// PlayerGrabber detects this via OverlapSphere and calls OnCollected() on trigger press.
+/// <summary>
+/// Attach to any GameObject you want to be grabbable and collectable through XR controllers.
+/// Check isTrash in the Inspector for trash items.
+/// </summary>
+[RequireComponent(typeof(UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable))]
+[RequireComponent(typeof(Rigidbody))]
 public class Collectable : MonoBehaviour
 {
     [Header("Settings")]
-    public string collectableName = "Trash";
-    public int pointValue = 10;
+    public string collectableName  = "Item";
+    public bool   isTrash          = false;   // check this for trash items
+    public bool   destroyOnCollect = true;
 
-    [Header("Idle Animation")]
-    public float bobSpeed = 1.5f;
-    public float bobHeight = 0.2f;
-    public float rotateSpeed = 90f;
+    [Header("Feedback optional")]
+    public AudioClip  collectSound;
+    public GameObject collectEffect;
 
-    [Header("Collection")]
-    [Tooltip("Seconds to shrink from full size to zero before destroying.")]
-    public float collectDuration = 0.5f;
+    UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable _grabInteractable;
+    AudioSource        _audio;
 
-    [Header("Feedback")]
-    public AudioClip collectSound;
+    void Awake()
+    {
+        _grabInteractable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
 
-    private Vector3 _startPos;
-    private Vector3 _originalScale;
-    private AudioSource _audioSource;
-    private bool _collected = false;
+        // Fire OnGrabbed when the controller grabs this object
+        _grabInteractable.selectEntered.AddListener(OnGrabbed);
+
+        // Configure Rigidbody for XR grabbing
+        var rb = GetComponent<Rigidbody>();
+        rb.useGravity  = true;
+        rb.isKinematic = false;
+    }
 
     void Start()
     {
-        _startPos = transform.position;
-        _originalScale = transform.localScale;
-
-        if (collectSound != null)
+        if (collectSound)
         {
-            _audioSource = gameObject.AddComponent<AudioSource>();
-            _audioSource.playOnAwake = false;
-            _audioSource.clip = collectSound;
+            _audio = gameObject.AddComponent<AudioSource>();
+            _audio.playOnAwake = false;
+            _audio.clip        = collectSound;
         }
     }
 
-    void Update()
+    /// <summary>
+    /// Fires the moment an XR controller grabs this object.
+    /// </summary>
+    void OnGrabbed(SelectEnterEventArgs args)
     {
-        if (_collected) return;
+        // Notify HUD if this is a trash item
+        if (isTrash)
+            HUDBuilder.Instance?.OnTrashCollected();
 
-        // No Rigidbody on this object, so direct transform writes are safe
-        float newY = _startPos.y + Mathf.Sin(Time.time * bobSpeed) * bobHeight;
-        transform.position = new Vector3(transform.position.x, newY, transform.position.z);
-        transform.Rotate(Vector3.up, rotateSpeed * Time.deltaTime);
-    }
+        // Spawn visual effect at grab position
+        if (collectEffect)
+            Instantiate(collectEffect, transform.position, Quaternion.identity);
 
-    // Called by PlayerGrabber — not wired via inspector
-    public void OnCollected(PlayerGrabber collector)
-    {
-        if (_collected) return;
-        _collected = true;
-        StartCoroutine(CollectRoutine());
-    }
-
-    private IEnumerator CollectRoutine()
-    {
-        // Play immediately so sound overlaps with shrink animation
-        if (_audioSource != null && collectSound != null)
+        // Play sound detached so it survives object destruction
+        if (_audio && collectSound)
         {
-            _audioSource.transform.SetParent(null);
-            _audioSource.Play();
-            Destroy(_audioSource.gameObject, collectSound.length);
+            _audio.transform.SetParent(null);
+            _audio.Play();
+            Destroy(_audio.gameObject, collectSound.length);
         }
 
-        // Shrink to zero, then destroy
-        float elapsed = 0f;
-        while (elapsed < collectDuration)
-        {
-            elapsed += Time.deltaTime;
-            transform.localScale = Vector3.Lerp(_originalScale, Vector3.zero, Mathf.Clamp01(elapsed / collectDuration));
-            yield return null;
-        }
+        if (destroyOnCollect)
+            Destroy(gameObject);
+        else
+            gameObject.SetActive(false);
+    }
 
-        Destroy(gameObject);
+    void OnDestroy()
+    {
+        if (_grabInteractable != null)
+            _grabInteractable.selectEntered.RemoveListener(OnGrabbed);
     }
 }
