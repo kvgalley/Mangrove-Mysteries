@@ -653,6 +653,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Collectable
   collectableName: Trash
   pointValue: 10
+  isTrash: 1
   bobSpeed: 0.5
   bobHeight: 0.05
   rotateSpeed: 25
@@ -1883,6 +1884,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Collectable
   collectableName: Trash
   pointValue: 10
+  isTrash: 1
   bobSpeed: 0.5
   bobHeight: 0.05
   rotateSpeed: 25
@@ -2321,6 +2323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Collectable
   collectableName: Trash
   pointValue: 10
+  isTrash: 1
   bobSpeed: 0.5
   bobHeight: 0.05
   rotateSpeed: 25
@@ -2609,6 +2612,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Collectable
   collectableName: Trash
   pointValue: 10
+  isTrash: 1
   bobSpeed: 0.5
   bobHeight: 0.05
   rotateSpeed: 25
@@ -2954,6 +2958,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Collectable
   collectableName: Trash
   pointValue: 10
+  isTrash: 1
   bobSpeed: 0.5
   bobHeight: 0.05
   rotateSpeed: 25
@@ -3824,6 +3829,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Collectable
   collectableName: Trash
   pointValue: 10
+  isTrash: 1
   bobSpeed: 0.5
   bobHeight: 0.05
   rotateSpeed: 25
@@ -4285,6 +4291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Collectable
   collectableName: Trash
   pointValue: 10
+  isTrash: 1
   bobSpeed: 0.5
   bobHeight: 0.05
   rotateSpeed: 25
@@ -5497,7 +5504,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   grabAction: {fileID: 1166722844}
-  totalScore: 0
   totalItemsCollected: 0
 --- !u!1 &866055880
 GameObject:
@@ -5619,7 +5625,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   grabAction: {fileID: 647996595}
-  totalScore: 0
   totalItemsCollected: 0
 --- !u!114 &884007479 stripped
 MonoBehaviour:
@@ -5943,6 +5948,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Collectable
   collectableName: Trash
   pointValue: 10
+  isTrash: 1
   bobSpeed: 0.5
   bobHeight: 0.05
   rotateSpeed: 25
@@ -6403,7 +6409,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: bb8200f6904554998bd10032be6a028f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.07
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -7926,7 +7932,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 9e84cf1605911b74a9d9449e0ca50f3b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.05
+  m_Volume: 0.03
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -8023,7 +8029,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 7e4bf89070917a5479e68eab55314537, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.05
+  m_Volume: 0.04
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -8259,6 +8265,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Collectable
   collectableName: Trash
   pointValue: 10
+  isTrash: 1
   bobSpeed: 0.5
   bobHeight: 0.05
   rotateSpeed: 25
@@ -8359,6 +8366,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Collectable
   collectableName: Trash
   pointValue: 10
+  isTrash: 1
   bobSpeed: 0.5
   bobHeight: 0.05
   rotateSpeed: 25
@@ -8835,7 +8843,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1551233135}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f5ea2a936ac284d5690e199a1b6d3806, type: 3}
   m_Name: 
@@ -9398,6 +9406,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Collectable
   collectableName: Trash
   pointValue: 10
+  isTrash: 1
   bobSpeed: 0.5
   bobHeight: 0.05
   rotateSpeed: 25
@@ -9654,6 +9663,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Collectable
   collectableName: Trash
   pointValue: 10
+  isTrash: 1
   bobSpeed: 0.5
   bobHeight: 0.05
   rotateSpeed: 25
@@ -10085,6 +10095,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Collectable
   collectableName: Trash
   pointValue: 10
+  isTrash: 1
   bobSpeed: 1.5
   bobHeight: 0.2
   rotateSpeed: 90
@@ -10598,6 +10609,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Collectable
   collectableName: Trash
   pointValue: 10
+  isTrash: 1
   bobSpeed: 0.5
   bobHeight: 0.05
   rotateSpeed: 25
@@ -11082,6 +11094,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Collectable
   collectableName: Trash
   pointValue: 10
+  isTrash: 1
   bobSpeed: 0.5
   bobHeight: 0.05
   rotateSpeed: 25
@@ -11244,6 +11257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Collectable
   collectableName: Trash
   pointValue: 10
+  isTrash: 1
   bobSpeed: 0.5
   bobHeight: 0.05
   rotateSpeed: 25
@@ -11393,6 +11407,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Collectable
   collectableName: Trash
   pointValue: 10
+  isTrash: 1
   bobSpeed: 0.5
   bobHeight: 0.05
   rotateSpeed: 25
@@ -12028,6 +12043,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Collectable
   collectableName: Trash
   pointValue: 10
+  isTrash: 1
   bobSpeed: 0.5
   bobHeight: 0.05
   rotateSpeed: 25
@@ -12047,6 +12063,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Collectable
   collectableName: Trash
   pointValue: 10
+  isTrash: 1
   bobSpeed: 0.5
   bobHeight: 0.05
   rotateSpeed: 25
@@ -12066,6 +12083,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Collectable
   collectableName: Trash
   pointValue: 10
+  isTrash: 1
   bobSpeed: 0.5
   bobHeight: 0.05
   rotateSpeed: 25
@@ -12085,6 +12103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Collectable
   collectableName: Trash
   pointValue: 10
+  isTrash: 1
   bobSpeed: 0.5
   bobHeight: 0.05
   rotateSpeed: 25
@@ -12104,6 +12123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Collectable
   collectableName: Trash
   pointValue: 10
+  isTrash: 1
   bobSpeed: 0.5
   bobHeight: 0.05
   rotateSpeed: 25

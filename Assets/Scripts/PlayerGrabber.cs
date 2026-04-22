@@ -14,8 +14,9 @@ public class PlayerGrabber : MonoBehaviour
     [Tooltip("XRI Default Input Actions > XRI Right Interaction > Activate")]
     public InputActionReference grabAction;
 
-    [Header("Score")]
-    public int totalScore = 0;
+    [Header("Debug")]
+    // HUDBuilder is the single source of truth for score.
+    // We only track item count here for logging/diagnostics.
     public int totalItemsCollected = 0;
 
     private Collectable _nearestCollectable;
@@ -66,9 +67,8 @@ public class PlayerGrabber : MonoBehaviour
 
     void Collect(Collectable item)
     {
-        totalScore += item.pointValue;
         totalItemsCollected++;
-        Debug.Log($"[PlayerGrabber] '{item.collectableName}' +{item.pointValue}pts | Total: {totalScore}pts, {totalItemsCollected} items");
+        Debug.Log($"[PlayerGrabber] '{item.collectableName}' +{item.pointValue}pts | {totalItemsCollected} items picked up");
         item.OnCollected(this);
     }
 

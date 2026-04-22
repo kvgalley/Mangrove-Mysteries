@@ -8,6 +8,8 @@ public class Collectable : MonoBehaviour
     [Header("Settings")]
     public string collectableName = "Trash";
     public int pointValue = 10;
+    [Tooltip("If true, pickup increments the HUD's trash counter.")]
+    public bool isTrash = true;
 
     [Header("Idle Animation")]
     public float bobSpeed = 1.5f;
@@ -54,6 +56,16 @@ public class Collectable : MonoBehaviour
     {
         if (_collected) return;
         _collected = true;
+
+        // Notify the HUD. Null-check the singleton so the game still runs
+        // if the HUD isn't in the scene (e.g. when testing in isolation).
+        // Collectable is the source of truth for its own point value —
+        // HUD just adds whatever we tell it.
+        if (isTrash && HUDBuilder.Instance != null)
+        {
+            HUDBuilder.Instance.OnTrashCollected(pointValue);
+        }
+
         StartCoroutine(CollectRoutine());
     }
 

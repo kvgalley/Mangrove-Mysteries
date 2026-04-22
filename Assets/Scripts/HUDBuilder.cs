@@ -12,11 +12,14 @@ public class HUDBuilder : MonoBehaviour
     public static HUDBuilder Instance { get; private set; }
 
     int wildlifePts = 50;
-    int trashPts    = 20;
+    // Default per-trash display value shown in the score-panel subtitle.
+    // Actual pts per pickup come from each Collectable's pointValue.
+    int trashPtsDisplay = 10;
 
     string[] wildlifeNames = {
-        "Manatee", "Pelican", "Horseshoe crab",
-        "Blue crab", "Heron", "Mangrove tree", "Coconut palm"
+        "Manatee", "Horse Shoe Crab",
+        "Egret", "White Ibis", "Turtle",
+        "Mangrove tree", "Coconut palm"
     };
 
     // true = fauna, false = flora
@@ -24,6 +27,7 @@ public class HUDBuilder : MonoBehaviour
 
     int _spotted;
     int _trash;
+    int _trashPoints;
     Coroutine _notifyRoutine;
 
     // Built UI references
@@ -133,7 +137,7 @@ public class HUDBuilder : MonoBehaviour
         wbRT.anchoredPosition = new Vector2(0, -128);
         _wildlifeBreakTMP.alignment = TextAlignmentOptions.Center;
 
-        _trashBreakTMP = MakeSimpleText(scorePanel, "TrashBreak", "Trash: 20 points", 20, textDim);
+        _trashBreakTMP = MakeSimpleText(scorePanel, "TrashBreak", $"Trash: {trashPtsDisplay} points", 20, textDim);
         RectTransform tbRT = _trashBreakTMP.GetComponent<RectTransform>();
         tbRT.anchorMin = new Vector2(0,1); tbRT.anchorMax = new Vector2(1,1);
         tbRT.pivot     = new Vector2(0.5f,1);
@@ -312,21 +316,24 @@ public class HUDBuilder : MonoBehaviour
             : $"{row.name} removed · -{wildlifePts} pts");
     }
 
-    /// <summary>Called automatically by Collectable.OnCollected() when isTrash = true.</summary>
-    public void OnTrashCollected()
+    /// <summary>Called automatically by Collectable.OnCollected() when isTrash = true.
+    /// The caller supplies the point value from the Collectable itself — the HUD
+    /// is not the source of truth for per-item points.</summary>
+    public void OnTrashCollected(int points)
     {
         _trash++;
+        _trashPoints += points;
         if (_trashCountTMP) _trashCountTMP.text = _trash.ToString();
         RefreshScore();
-        ShowNotify($"Trash collected · +{trashPts} pts");
+        ShowNotify($"Trash collected · +{points} pts");
     }
 
     void RefreshScore()
     {
-        int total = (_spotted * wildlifePts) + (_trash * trashPts);
+        int total = (_spotted * wildlifePts) + _trashPoints;
         if (_scoreTMP)         _scoreTMP.text         = total.ToString("N0");
         if (_wildlifeBreakTMP) _wildlifeBreakTMP.text = $"Wildlife: {_spotted} x {wildlifePts} = {_spotted * wildlifePts}";
-        if (_trashBreakTMP)    _trashBreakTMP.text    = $"Trash: {_trash} x {trashPts} = {_trash * trashPts}";
+        if (_trashBreakTMP)    _trashBreakTMP.text    = $"Trash: {_trash} collected = {_trashPoints}";
     }
 
     public void SetInteractHint(string text, bool visible)
