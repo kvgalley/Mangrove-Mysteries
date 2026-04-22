@@ -4307,7 +4307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc1cd142492f84966b70714c96314276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerGrabber
-  grabRadius: 0.3
+  grabRadius: 1.5
   collectableLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -4429,7 +4429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc1cd142492f84966b70714c96314276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerGrabber
-  grabRadius: 0.3
+  grabRadius: 1.5
   collectableLayer:
     serializedVersion: 2
     m_Bits: 64
