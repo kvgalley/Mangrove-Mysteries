@@ -1,8 +1,9 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-// Sits on Right Controller. Each frame sweeps a sphere around the hand
-// and caches the nearest Collectable. When the trigger fires, that item is collected.
+// Sits on Right Controller. Sweeps a sphere around the hand each frame
+// and collects the nearest Collectable when the trigger fires.
+// Works alongside XRGrabInteractable — whichever fires first wins.
 public class PlayerGrabber : MonoBehaviour
 {
     [Header("Detection")]
@@ -13,12 +14,6 @@ public class PlayerGrabber : MonoBehaviour
     [Header("VR Input")]
     [Tooltip("XRI Default Input Actions > XRI Right Interaction > Activate")]
     public InputActionReference grabAction;
-
-    [Header("Score")]
-    public int totalScore = 0;
-    public int totalItemsCollected = 0;
-
-    private Collectable _nearestCollectable;
 
     void OnEnable()
     {
@@ -34,42 +29,48 @@ public class PlayerGrabber : MonoBehaviour
 
     void Update()
     {
-        FindNearest();
+        FindAndHintNearest();
     }
 
-    void FindNearest()
+    void FindAndHintNearest()
     {
         Collider[] hits = Physics.OverlapSphere(transform.position, grabRadius, collectableLayer);
 
-        float closestDist = float.MaxValue;
-        _nearestCollectable = null;
+        float      closestDist = float.MaxValue;
+        Collectable nearest    = null;
 
         foreach (Collider hit in hits)
         {
             Collectable item = hit.GetComponent<Collectable>();
             if (item == null) continue;
-
             float dist = Vector3.Distance(transform.position, item.transform.position);
-            if (dist < closestDist)
-            {
-                closestDist = dist;
-                _nearestCollectable = item;
-            }
+            if (dist < closestDist) { closestDist = dist; nearest = item; }
         }
+
+        // Update interact hint on HUD
+        if (nearest != null)
+            HUDBuilder.Instance?.SetInteractHint($"Squeeze trigger to collect {nearest.collectableName}", true);
+        else
+            HUDBuilder.Instance?.SetInteractHint("", false);
     }
 
     void OnTriggerPressed(InputAction.CallbackContext ctx)
     {
-        if (_nearestCollectable != null)
-            Collect(_nearestCollectable);
-    }
+        Collider[] hits = Physics.OverlapSphere(transform.position, grabRadius, collectableLayer);
 
-    void Collect(Collectable item)
-    {
-        totalScore += item.pointValue;
-        totalItemsCollected++;
-        Debug.Log($"[PlayerGrabber] '{item.collectableName}' +{item.pointValue}pts | Total: {totalScore}pts, {totalItemsCollected} items");
-        item.OnCollected(this);
+        float      closestDist = float.MaxValue;
+        Collectable nearest    = null;
+
+        foreach (Collider hit in hits)
+        {
+            Collectable item = hit.GetComponent<Collectable>();
+            if (item == null) continue;
+            float dist = Vector3.Distance(transform.position, item.transform.position);
+            if (dist < closestDist) { closestDist = dist; nearest = item; }
+        }
+
+        if (nearest != null)
+            nearest.OnCollected(this);
     }
 
     void OnDrawGizmosSelected()
